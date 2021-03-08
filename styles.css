@@ -3,12 +3,7 @@ input {
   margin: 0 auto;
   background-color: #fff8f2;
 }
-a {
-  color: #596aca;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 25px;
-}
+
 .btn {
   display: block;
   margin: 0 auto;
@@ -77,4 +72,10 @@ li {
 #current:hover {
   background-color: #475599;
   color: #dbdbdb;
+}
+a {
+  color: #596aca;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 25px;
 }
