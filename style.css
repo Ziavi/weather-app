@@ -1,0 +1,80 @@
+input {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff8f2;
+}
+a {
+  color: #596aca;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 25px;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 45%;
+  margin: 0 auto;
+}
+.card-body {
+  max-width: 100%;
+  font-family: "Lexend Mega", sans-serif;
+}
+.text {
+  color: #596aca;
+}
+.city {
+  font-size: 27px;
+  font-weight: bolder;
+  line-height: 25px;
+}
+.temp {
+  font-size: 50px;
+  line-height: 15px;
+}
+.day {
+  font-size: 15px;
+}
+.clear {
+  font-size: 15px;
+}
+.info {
+  font-size: 15px;
+}
+.sunny {
+  color: #ffa726;
+}
+li {
+  text-align: center;
+}
+
+.list-group-item {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #596aca;
+  color: #596aca;
+  transition: all 400ms ease-in-out;
+}
+.list-group-item:hover {
+  border: 1px solid white;
+  background-color: #bcc6f2;
+  color: white;
+  cursor: auto;
+}
+#look {
+  transition: all 200ms ease-in-out;
+}
+#look:hover {
+  background-color: #dbdbdb;
+}
+#current {
+  color: white;
+  background-color: #596aca;
+  transition: all 200ms ease-in-out;
+}
+#current:hover {
+  background-color: #475599;
+  color: #dbdbdb;
+}
