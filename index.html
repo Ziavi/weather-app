@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c13d4199a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <br />
+      <br />
+      <div class="card">
+        <div class="card-body">
+          <form class="row" id="search-form">
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                id="enter-city"
+                placeholder="Enter City"
+              />
+            </div>
+            <div class="col-2">
+              <input type="submit" id="look" class="btn btn-light" value="🔍" />
+            </div>
+            <div class="col-4">
+              <button id="current" class="btn btn-light">current</button>
+            </div>
+          </form>
+          <br />
+          <div class="row text">
+            <div class="col-6 city">
+              <span id="current-city"></span> <br /><span
+                class="day"
+                id="day-of-the-week"
+              >
+                Thursday 10:31</span
+              >
+              <br /><span class="clear" id="description"></span>
+              <br /><br /><span>
+                <a href="#" id="c">°C</a> | <a href="#" id="f">°F</a></span
+              >
+            </div>
+            <div class="col-6 temp">
+              <span
+                ><span class="float" id="temp"></span
+                ><span id="symbol">°C </span></span
+              >
+              <span class="sunny"><i class="far fa-sun"></i></span>
+              <br />
+              <span class="info" id="humidity">Humidity %</span>
+              <br />
+              <span class="info" id="wind">Wind km/h</span>
+            </div>
+          </div>
+          <br />
+          <div class="card-body">
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item">
+                Fri
+                <div class="image"><i class="far fa-sun"></i></div>
+                <div class="temperature">18°C</div>
+              </li>
+              <li class="list-group-item">
+                Sat
+                <div class="image"><i class="fas fa-cloud"></i></div>
+                <div class="temperature">17°C</div>
+              </li>
+              <li class="list-group-item">
+                Sun
+                <div class="image"><i class="fas fa-cloud-rain"></i></div>
+                <div class="temperature">16°C</div>
+              </li>
+              <li class="list-group-item">
+                Mon
+                <div class="image"><i class="fas fa-cloud-sun"></i></div>
+                <div class="temperature">17°C</div>
+              </li>
+              <li class="list-group-item">
+                Tue
+                <div class="image"><i class="fas fa-wind"></i></div>
+                <div class="temperature">17°C</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
