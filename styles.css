@@ -80,3 +80,15 @@ li {
   font-weight: 100;
   font-size: 25px;
 }
+#credits {
+  font-family: "Lexend Mega", sans-serif;
+  font-size: 12px;
+  margin: 0 auto;
+  max-width: 45%;
+  padding: 10px;
+}
+#github-link {
+  font-size: 12px;
+  font-weight: bolder;
+  text-decoration: none;
+}
