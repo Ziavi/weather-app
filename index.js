@@ -36,6 +36,11 @@ function getTempAndInfo(response) {
   city.innerHTML = response.data.name;
   let cdescription = document.querySelector("#description");
   cdescription.innerHTML = description;
+  let image = document.querySelector("img");
+  image.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function changeCity(event) {
@@ -88,6 +93,11 @@ function changeInfo(response) {
   city.innerHTML = place;
   let cdescription = document.querySelector("#description");
   cdescription.innerHTML = description;
+  let image = document.querySelector("img");
+  image.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 function getTempInfoCurrent(position) {
   let latitude = position.coords.latitude;

@@ -38,9 +38,7 @@ input {
 .info {
   font-size: 15px;
 }
-.sunny {
-  color: #ffa726;
-}
+
 li {
   text-align: center;
 }
@@ -91,4 +89,10 @@ li {
   font-size: 12px;
   font-weight: bolder;
   text-decoration: none;
+}
+
+#icon {
+  display: inline;
+  width: 80px;
+  padding: 0 0 10px;
 }
