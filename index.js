@@ -23,6 +23,7 @@ function searchCity(city) {
 }
 function getTempAndInfo(response) {
   let temp = response.data.main.temp;
+  celciusTemperature = response.data.main.temp;
   let wind = response.data.wind.speed;
   let humid = response.data.main.humidity;
   let description = response.data.weather[0].main;
@@ -56,30 +57,29 @@ searchForm.addEventListener("submit", changeCity);
 function toF(event) {
   event.preventDefault();
   let temp = document.querySelector("#temp");
-  let temperature = temp.innerHTML;
   let symbolF = document.querySelector("#symbol");
-  let newTemp = Math.round((temperature * 9) / 5 + 32);
+  let newTemp = Math.round((celciusTemperature * 9) / 5 + 32);
   symbolF.innerHTML = "°F";
   temp.innerHTML = newTemp;
 }
 function toC(event) {
   event.preventDefault();
   let temp = document.querySelector("#temp");
-  let temperature = temp.innerHTML;
   let symbolC = document.querySelector("#symbol");
-  let newTemp = Math.round(((temperature - 32) * 5) / 9);
   symbolC.innerHTML = "°C";
-  temp.innerHTML = newTemp;
+  temp.innerHTML = Math.round(celciusTemperature);
 }
 let celcius = document.querySelector("#c");
 celcius.addEventListener("click", toC);
 let fahrenheit = document.querySelector("#f");
 fahrenheit.addEventListener("click", toF);
+let celciusTemperature = null;
 
 //Curent
 let button = document.querySelector("#current");
 function changeInfo(response) {
   let temp = response.data.main.temp;
+  celciusTemperature = response.data.main.temp;
   let wind = response.data.wind.speed;
   let humid = response.data.main.humidity;
   let description = response.data.weather[0].main;
