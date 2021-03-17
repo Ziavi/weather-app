@@ -41,6 +41,7 @@ function getTempAndInfo(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  image.setAttribute("alt", description);
 }
 
 function changeCity(event) {
@@ -98,6 +99,7 @@ function changeInfo(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  image.setAttribute("alt", description);
 }
 function getTempInfoCurrent(position) {
   let latitude = position.coords.latitude;
